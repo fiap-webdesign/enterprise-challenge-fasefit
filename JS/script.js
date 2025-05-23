@@ -1,10 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Certifique-se de que o elemento de pontuação existe antes de tentar usá-lo
     const scoreElement = document.getElementById('score');
     let currentScore = 0; // Começamos com 0 pontos
 
     // Tenta carregar a pontuação salva (se existir)
     if (localStorage.getItem('fasefitScore')) {
         currentScore = parseInt(localStorage.getItem('fasefitScore'));
+    }
+    // Atualiza a exibição da pontuação no cabeçalho em TODAS as páginas
+    if (scoreElement) {
         scoreElement.textContent = `Pontos: ${currentScore}`;
     }
 
@@ -14,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         profileScoreDisplay.textContent = currentScore;
     }
 
-    // Lógica para a página de Desafios
+    // O restante do seu código de desafios e conquistas permanece o mesmo
     const completeButtons = document.querySelectorAll('.complete-button');
     if (completeButtons.length > 0) { // Se estiver na página de desafios
         completeButtons.forEach(button => {
@@ -44,7 +48,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // Aumenta a pontuação
                 currentScore += 10; // Cada desafio vale 10 pontos!
-                scoreElement.textContent = `Pontos: ${currentScore}`;
+                if (scoreElement) { // Garante que o elemento existe antes de atualizar
+                    scoreElement.textContent = `Pontos: ${currentScore}`;
+                }
 
                 // Salva a nova pontuação no armazenamento local do navegador
                 localStorage.setItem('fasefitScore', currentScore);
