@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FaseFit: Suas Conquistas Desbloqueadas</title> 
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">FaseFit</h1>
+            <nav class="main-nav" aria-label="Navegação principal do site">
+                <ul>
+                    <li><a href="/Pages/index.html">Desafios</a></li>
+                    <li><a href="/Pages/ranking.html">Conquistas</a></li>
+                    <li><a href="/Pages/perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="score-area">
+                <span id="score">Pontos: 0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content" aria-labelledby="achievements-heading">
+        <h2 id="achievements-heading">Suas Conquistas</h2>
+        <p class="motivation-text">Desbloqueie novas insígnias à medida que avança na sua jornada!</p>
+
+        <div class="achievements-grid" role="list"> <div class="achievement-item locked" data-achievement-id="1" data-min-score="10" role="listitem"> <img src="https://via.placeholder.com/100/BF40BF/FFFFFF?text=1" alt="Insígnia de Primeiro Passo: número 1 em roxo neon"> <h3>Primeiro Passo</h3>
+                <p>Conclua seu primeiro desafio.</p>
+                <span class="status-badge">Bloqueado</span>
+            </div>
+            <div class="achievement-item locked" data-achievement-id="2" data-min-score="30" role="listitem">
+                <h3>Força de Vontade</h3>
+                <p>Acumule 30 pontos.</p>
+                <span class="status-badge">Bloqueado</span>
+            </div>
+            <div class="achievement-item locked" data-achievement-id="3" data-min-score="60" role="listitem">
+                <h3>Mestre da Saúde</h3>
+                <p>Atinja 60 pontos.</p>
+                <span class="status-badge">Bloqueado</span>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

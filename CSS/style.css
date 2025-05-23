@@ -1,0 +1,337 @@
+/* Geral - Base escura e sofisticada */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0D1B2A; /* Azul Escuro/Petróleo para o fundo */
+    color: #FFFFFF; /* Texto branco puro */
+    line-height: 1.6;
+}
+
+/* Cabeçalho - Fachada elegante e funcional */
+.header {
+    background-color: #0D1B2A; /* Mesmo azul escuro do fundo para uma transição suave */
+    color: #FFFFFF;
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.6);
+    border-bottom: 3px solid #8A2BE2; /* Risco ROXO VIBRANTE na fachada! */
+}
+
+/* Container para alinhar logo, menu e pontos */
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header h1.logo {
+    margin: 0;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFD700; /* AMARELO OURO para a LOGO! */
+    text-shadow: 0 0 15px rgba(255,215,0,0.8);
+    flex-grow: 1; /* Permite que a logo ocupe o espaço necessário */
+    text-align: left;
+}
+
+/* Estilos para o menu de navegação */
+.main-nav ul {
+    list-style: none; /* Remove as bolinhas da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Alinha os itens do menu lado a lado */
+    gap: 25px; /* Espaço entre os itens do menu */
+}
+
+.main-nav a {
+    color: #FFFFFF; /* Texto branco para os links */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s ease, text-shadow 0.3s ease, outline 0.2s ease; /* Adicionado outline */
+    border-radius: 5px; /* Para o foco visual ficar mais bonito */
+}
+
+.main-nav a:hover {
+    color: #BF40BF; /* Roxo NEON ao passar o mouse */
+    text-shadow: 0 0 8px rgba(191,64,191,0.7); /* Brilho neon */
+}
+
+.main-nav a:focus { /* ESTILO DE FOCO PARA ACESSIBILIDADE */
+    outline: 3px solid #FFD700; /* Borda amarela ouro no foco */
+    outline-offset: 2px; /* Afasta a borda um pouco do elemento */
+    box-shadow: 0 0 10px rgba(255,215,0,0.8); /* Brilho amarelo */
+}
+
+.score-area {
+    margin-top: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #BF40BF; /* Roxo NEON para os pontos, super vibrante! */
+    text-shadow: 0 0 10px rgba(191,64,191,0.7);
+    text-align: right;
+}
+
+/* Conteúdo Principal - O retângulo grande */
+.main-content {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #1A2E40; /* Um tom de azul escuro um pouco mais claro que o fundo, para contraste */
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    border: 1px solid #28425F;
+}
+
+.main-content h2 {
+    color: #FFD700; /* Título dos desafios em AMARELO OURO */
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 2.8em;
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(255,215,0,0.6);
+}
+
+.motivation-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: #B0B0B0; /* CINZA MÉDIO para o texto motivacional */
+    margin-bottom: 40px;
+}
+
+/* Lista de Desafios - Cards de missão */
+.challenge-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.challenge-item {
+    background-color: #0D1B2A; /* Mesma cor do fundo, para um efeito "flutuante" */
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    border: 2px solid #8A2BE2; /* Uma borda ROXO VIBRANTE para cada card! */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.challenge-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 30px rgba(138,43,226,0.6); /* Brilho ROXO VIBRANTE ao passar o mouse! */
+}
+
+.challenge-item h3 {
+    color: #FFFFFF; /* Título do desafio em BRANCO */
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.6em;
+    text-transform: uppercase;
+}
+
+.challenge-item p {
+    font-size: 1em;
+    color: #B0B0B0; /* CINZA MÉDIO para a descrição */
+    flex-grow: 1;
+}
+
+/* Botão de Concluir - A ação principal com destaque */
+.complete-button {
+    background-color: #FFD700; /* AMARELO OURO para o botão de ação! Forte e claro */
+    color: #0D1B2A; /* Texto azul escuro no botão amarelo para alto contraste */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, outline 0.2s ease; /* Adicionado outline */
+    align-self: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.5); /* Sombra amarela no botão */
+}
+
+.complete-button:hover {
+    background-color: #E0BF00; /* Um amarelo um pouco mais escuro ao passar o mouse */
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(255,215,0,0.8); /* Brilho amarelo mais forte ao passar o mouse */
+}
+
+.complete-button:focus { /* ESTILO DE FOCO PARA ACESSIBILIDADE */
+    outline: 3px solid #BF40BF; /* Borda roxo neon no foco */
+    outline-offset: 3px;
+    box-shadow: 0 0 15px rgba(191,64,191,0.8);
+}
+
+.complete-button.completed {
+    background-color: #3A4750; /* Um cinza azulado escuro para o botão concluído */
+    color: #888888;
+    cursor: not-allowed;
+    pointer-events: none;
+    border: 1px solid #4A5A6A;
+    box-shadow: none;
+    outline: none; /* Remove o outline se já concluído */
+}
+
+.challenge-item.completed {
+    opacity: 0.6;
+    text-decoration: line-through;
+    border-color: #3A4750;
+    box-shadow: none;
+}
+
+/* --- Estilos para as NOVAS SEÇÕES (Perfil e Conquistas) --- */
+
+/* Card de Perfil */
+.profile-card {
+    background-color: #1A2E40; /* Mesma cor do main-content */
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+    max-width: 400px;
+    margin: 40px auto; /* Centraliza o card */
+    border: 1px solid #28425F;
+}
+
+.profile-avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Faz a imagem ser redonda */
+    object-fit: cover; /* Garante que a imagem preencha o círculo */
+    border: 4px solid #BF40BF; /* Borda ROXO NEON para o avatar! */
+    box-shadow: 0 0 15px rgba(191,64,191,0.7); /* Brilho neon no avatar */
+    margin-bottom: 20px;
+}
+
+.profile-name {
+    font-size: 2em;
+    color: #FFD700; /* Nome em AMARELO OURO */
+    margin-bottom: 10px;
+    text-shadow: 0 0 8px rgba(255,215,0,0.5);
+}
+
+.profile-info {
+    font-size: 1.1em;
+    color: #B0B0B0;
+    margin-bottom: 25px;
+}
+
+.profile-score-display {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #BF40BF; /* Pontuação em ROXO NEON */
+    text-shadow: 0 0 10px rgba(191,64,191,0.7);
+}
+
+/* Grid de Conquistas */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 2 ou 3 colunas para as conquistas */
+    gap: 25px;
+    padding: 20px;
+    background-color: #1A2E40; /* Mesma cor do main-content */
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    border: 1px solid #28425F;
+    max-width: 960px; /* Largura igual ao main-content */
+    margin: 40px auto; /* Centraliza */
+}
+
+.achievement-item {
+    background-color: #0D1B2A; /* Mesma cor do fundo, para flutuar */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    border: 2px solid #8A2BE2; /* Borda ROXO VIBRANTE para cada conquista */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Para posicionar o badge de status */
+}
+
+.achievement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(138,43,226,0.7); /* Brilho roxo ao passar o mouse */
+}
+
+.achievement-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #BF40BF; /* Borda ROXO NEON para a insígnia */
+    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(191,64,191,0.5);
+}
+
+.achievement-item h3 {
+    color: #FFD700; /* Título da conquista em AMARELO OURO */
+    font-size: 1.3em;
+    margin-bottom: 8px;
+}
+
+.achievement-item p {
+    color: #B0B0B0; /* Descrição em CINZA MÉDIO */
+    font-size: 0.9em;
+}
+
+.status-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #FFD700; /* Amarelo Ouro para o badge de status */
+    color: #0D1B2A; /* Texto azul escuro no badge */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.achievement-item.unlocked .status-badge {
+    background-color: #8A2BE2; /* Roxo vibrante quando desbloqueado */
+    color: #FFFFFF;
+}
+
+.achievement-item.locked img {
+    filter: grayscale(100%); /* Deixa a insígnia cinza se bloqueada */
+    opacity: 0.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .main-content {
+        margin: 25px 15px;
+        padding: 20px;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .header h1.logo {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .score-area {
+        text-align: center;
+    }
+
+    .main-content h2 {
+        font-size: 2em;
+    }
+
+    .challenge-list {
+        grid-template-columns: 1fr;
+    }
+}
