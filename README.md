@@ -29,8 +29,7 @@ Este projeto foi construído utilizando as bases da web, garantindo leveza, perf
 ## 🌐 Como Acessar o Projeto Online (Deploy no Vercel)
 https://enterprise-challenge-fasefi-git-eb5398-sarahs-projects-bad44087.vercel.app/
 
-O FaseFit está publicado e disponível para acesso em:
-
-## [Assista também ao meu pitch no YouTube] (https://youtu.be/o9ovZND8Mis)
+## Assista também ao meu pitch no YouTube 
+https://youtu.be/o9ovZND8Mis
 
 Este projeto é parte do "Enterprise Challenge - Desafio Concentrix: Seu Esporte, Sua Jornada".
