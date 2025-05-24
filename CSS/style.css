@@ -149,7 +149,7 @@ body {
     font-size: 1.1em;
     font-weight: bold;
     margin-top: 20px;
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, outline 0.2s ease; /* Adicionado outline */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease, outline 0.2s ease; 
     align-self: center;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -325,46 +325,39 @@ body {
         grid-template-columns: 1fr;
     }
 }
-/* Estilos para o Botão "Zerar Pontuação" */
 #reset-score-button {
-    background-color: #B22222; /* Um vermelho mais sóbrio, tipo Tijolo (FireBrick) */
-    color: #FFFFFF; /* Texto branco */
-    border: 2px solid #DC143C; /* Borda vermelha mais viva (Crimson) */
+    background-color: #B22222; 
+    color: #FFFFFF; 
+    border: 2px solid #DC143C; 
     padding: 12px 25px;
     font-size: 1.1em;
     font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.2s ease;
-    display: block; /* Para que o botão ocupe sua própria linha */
-    margin: 20px auto 0 auto; /* Centraliza o botão e adiciona espaço acima */
-    max-width: 250px; /* Limita a largura para não ficar gigante em telas grandes */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Sombra para dar profundidade */
-    text-transform: uppercase; /* Deixa o texto em maiúsculas */
+    display: block; 
+    margin: 20px auto 0 auto; 
+    max-width: 250px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); 
+    text-transform: uppercase; 
     letter-spacing: 0.5px;
 }
 
 #reset-score-button:hover {
-    background-color: #DC143C; /* Vermelho mais vivo ao passar o mouse */
-    border-color: #FF0000; /* Borda vermelha mais brilhante */
-    transform: translateY(-2px); /* Pequeno efeito de "levantar" */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); /* Sombra mais intensa */
+    background-color: #DC143C; 
+    border-color: #FF0000; 
+    transform: translateY(-2px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); 
 }
 
 #reset-score-button:active {
-    background-color: #8B0000; /* Vermelho escuro ao clicar */
-    border-color: #FF4500; /* Laranja avermelhado */
-    transform: translateY(0); /* Volta à posição original */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra mais sutil */
+    background-color: #8B0000;
+    border-color: #FF4500;
+    transform: translateY(0); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
-/* Opcional: Para alinhar com outros botões se houver, ou caso você já tenha uma classe '.action-button' */
-/* Se você já usa '.action-button' para outros botões, considere adicionar esse estilo para ele também,
-   ou criar uma classe específica para botões de alerta/perigo.
-   Para o FaseFit, a classe do botão de "concluir" é `.complete-button`. Podemos usar a mesma base,
-   mas com cores diferentes. */
 
-/* Exemplo de como a class .action-button (se você usar no futuro) poderia ser: */
 .action-button {
     background-color: #8A2BE2; /* Roxo vibrante */
     color: #FFFFFF;
