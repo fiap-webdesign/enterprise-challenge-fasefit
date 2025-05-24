@@ -26,7 +26,8 @@ Este projeto foi construído utilizando as bases da web, garantindo leveza, perf
 
 **Por que estas tecnologias?** Focamos em uma abordagem "Vanilla" (sem frameworks JavaScript complexos) para demonstrar a capacidade de construir uma solução robusta com os fundamentos da web, garantindo um aprendizado profundo e otimização para o prazo do desafio. Esta escolha facilita o deploy e a manutenção inicial do projeto.
 
-## 🌐 Como Acessar o Projeto Online (Deploy no Vercel) 
+## 🌐 Como Acessar o Projeto Online (Deploy no Vercel)
+[https://enterprise-challenge-fasefi-git-eb5398-sarahs-projects-bad44087.vercel.app/]
 
 O FaseFit está publicado e disponível para acesso em:
 
